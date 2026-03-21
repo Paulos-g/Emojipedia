@@ -3,15 +3,73 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #555;
+}
 .heading {
   background-color: aqua;
-  color: #fff;
   font-size: 2.5rem;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  width: 250px;
+  width: 500px;
   margin: 0 auto;
-  margin-top: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 900;
+  font-size: 500%;
+  margin-top: 4rem;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.term {
+  color: #b41c1c;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.emoji {
+  font-size: 1.2rem;
+}
+.description {
+  font-size: 0.8rem;
+  color: black;
+  font-family: "Montserrat", popins;
+}
+.dictionary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4rem auto;
+  max-width: 90%;
+}
+.container {
+  background-color: #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.dictionary > .term {
+  text-align: center;
+  max-width: 20rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 3px;
+  box-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.05),
+    0 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ccc;
+  transition: all 100ms ease-in-out;
+}
+.dictionary > .term > dt {
+  margin-bottom: 1rem;
+}
+dt {
+  color: #2ec2b0;
+  line-height: 1;
+}
+dt span {
+  font-size: 200%;
+  font-weight: 900;
+  font-family: "Montserrat", serif;
 }
